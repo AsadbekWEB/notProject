@@ -6,6 +6,7 @@ const rIndex = require('./routes/index');
 const rAdd = require('./routes/add');
 const app = express();
 const port = 3000;
+const chalk = require('chalk');
 
 //mongoose connnect
 mongoose.connect('mongodb+srv://asadbek:WEBDASTURCHI@cluster0.54ysr.mongodb.net/test', { useNewUrlParser: true, useUnifiedTopology: true });
@@ -35,7 +36,7 @@ app.use(rIndex);
 app.use(rAdd);
 
 app.listen(port, (err, data) => {
-    console.log(`server http://localhost:${port} da ishladi`);
+    console.log( chalk.bgBlack.red(`server http://localhost:${port} da ishladi`));
 });
 
 
@@ -46,3 +47,16 @@ app.listen(port, (err, data) => {
 //  git status
 //  git init
 //  git status
+// git add .
+// git config user.name
+// git config user.name ''
+// git config user.email
+// git config user.email ''
+// git commit -m "ichiga izoh"
+// gitk
+// git branch
+// git  git branch fox
+// git checkout master
+// git checkout fox
+// git  commit -m ''
+
