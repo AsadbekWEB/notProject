@@ -58,5 +58,7 @@ app.listen(port, (err, data) => {
 // git  git branch fox
 // git checkout master
 // git checkout fox
-// git  commit -m ''
+// git  branch
+// git add . (. ni urniga papkani nomini yozsa)
+// git  branch
 
