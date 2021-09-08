@@ -1,0 +1,43 @@
+extends layout 
+block home
+    .container 
+        .row 
+            .col-12 
+            each db , i in datas
+                .box 
+                    .box-left 
+                        .box_LeftImg   
+                            img(src=db.photo alt="")
+                        .box_LeftText 
+                            .flex
+                                h2 Name :
+                                h4= db.title 
+                            .flex
+                                h2 Author :
+                                h4= db.author 
+                            .flex
+                                h2 Price  :
+                                h4= db.price 
+                        .box_left_icon 
+                            .flex 
+                                h3 Buying  :
+                                p 
+                                    i.fas.i.fa.fa-shopping-cart
+                                    spa= db.meta.buying
+                            .flex
+                                h3 Reading  :
+                                p  
+                                    i.fas.fa-book-open
+                                    span= db.meta.reading
+                            .flex 
+                                h3 Time  :
+                                p 
+                                    i.fa.fa-calendar
+                                    span= db.dataTime.toDateString()
+                    .box-right
+                        a(href="/product/" +db.id).btn.btn-danger
+                            i.fas.fa-wrench
+                            small Update
+                        a(href="/remove/" +db.id).btn.btn-success
+                            i.fas.fa-trash 
+                            small Delete

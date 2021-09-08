@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #009FFF, #ec2F4B);
+  height: 400vh;
+}
+
+*::selection{
+  background:#db1537;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+.card-body p {
+  color: white !important;
+}
+
+.container.home {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body .body {
+  display: flex;
+}
+
+.card-body .body h5 {
+  margin-right: 10px;
+}
+
+.row.g-0 {
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.for button {
+  display: block;
+  margin: 7px auto;
+}
+
+.form-label {
+  color: white !important;
+}
+
+form.cls input:focus {
+  background: transparent;
+  color: white !important;
+}
+
+form.cls input {
+  background: transparent;
+}
+
+.container {
+  padding-top: 100px;
+}
+
+button.btn.btn-danger {
+  margin-top: 50px;
+}
+
+.box {
+  background: linear-gradient(to top, rgba(51, 51, 51, 0.74), rgba(17, 17, 17, 0.705));
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 20px 0 0 0;
+}
+
+.box .box-left {
+  display: flex;
+  align-items: center;
+}
+
+.box_left_icon i {
+  margin-right: 7px;
+}
+
+.box .box_LeftText {
+  margin: 10px;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.box .box_left_icon {
+  margin: 20px 15px;
+  border: 1px solid white;
+  padding: 20px 15px;
+  border-radius: 8px;
+}
+
+.box .box-left .box_LeftImg img {
+  border-radius: 7px;
+  border: 1px solid white;
+  width: 350px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.box-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-right a {
+  margin: 10px;
+}
+
+.container h1 {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex  h2{
+  margin-right: 15px;
+}
+
+.flex  h3{
+  margin-right: 15px;
+}
+
+.box-right i {
+  padding-right: 15px;
+}
+
+.form-control{
+  color: white;
+}
